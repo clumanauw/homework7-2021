@@ -28,11 +28,11 @@ document.querySelector("#faster").addEventListener("click", function() {
 });
 
 document.querySelector("#skip").addEventListener("click", function() {
-    if (video.currentTime + 5 > video.duration) {
+    if (video.currentTime + 15 > video.duration) {
         video.currentTime = 0;
     }
     else {
-        video.currentTime = video.currentTime + 5;
+        video.currentTime = video.currentTime + 15;
     }
     console.log("Video time is"+video.currentTime);
 });
